@@ -59,7 +59,7 @@ button{
   display: flex;
 }
 
-.batton-main {
+.button-edit {
   background: none;
   border: 0px;
   color: #888;
@@ -69,7 +69,26 @@ button{
   cursor: pointer;
 }
 
-.batton-main:hover {
+.button-remove {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+.button-remove img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.button-remove img:hover {
+  transform: rotateZ(0);
+}
+
+.button-edit:hover {
   color: #3a3A3a;
 }
 
@@ -166,15 +185,7 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-.batton-main img {
-  height: 2em;
-  transform: rotateZ(45deg);
-  transition: transform 200ms ease-in;
-}
 
-.batton-main img:hover {
-  transform: rotateZ(0);
-}
 
 /* Completed */
 ul#completed-tasks label {
