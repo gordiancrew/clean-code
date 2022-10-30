@@ -69,6 +69,10 @@ button{
   cursor: pointer;
 }
 
+.button-edit:hover {
+  color: #3a3A3a;
+}
+
 .button-remove {
   background: none;
   border: 0px;
@@ -88,9 +92,7 @@ button{
   transform: rotateZ(0);
 }
 
-.button-edit:hover {
-  color: #3a3A3a;
-}
+
 
 /* Heading */
 /* label[for="new-task"] {
@@ -143,13 +145,25 @@ button{
   color: #333;
 }
 
-input#new-task {
-  width: 318px;
+.input-task li{
+  width: 226px;
+}
 
+#new-task {
+  width: 318px;
+}
+
+.input-checkbox  {
+  margin: 0 10px;
+}
+
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
 }
 
 /* Task list */
-li {
+.item-task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -159,9 +173,7 @@ li {
   vertical-align: middle;
 }
 
-.input-checkbox  {
-  margin: 0 10px;
-}
+
 
 li > label {
   padding-left: 10px;
@@ -170,17 +182,12 @@ li > label {
   width: 226px;
 }
 
-.input-task li{
-  width: 226px;
-}
+
 
 
 
 /* Completed */
-ul#completed-tasks label {
-  text-decoration: line-through;
-  color: #888;
-}
+
 
 /* Edit Task */
 ul li .input-task {
